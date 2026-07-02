@@ -1,2 +1,6 @@
 Hello this is a bug fixer file.
+<<<<<<< HEAD
 Hello i am Priyanshu Tiwari
+=======
+second line 
+>>>>>>> special

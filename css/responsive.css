@@ -1,0 +1,21 @@
+@media(max-width:768px){
+
+
+
+.nav-links{
+
+    display:none;
+
+}
+
+.menu-btn{
+
+    display:block;
+
+}
+
+ .nav-links.active{
+        display:flex;
+        flex-direction:column;
+    }
+}

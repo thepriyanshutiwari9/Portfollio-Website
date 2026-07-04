@@ -119,6 +119,7 @@ nav{
     align-items: center;
     padding: 80px;
     gap: 50px;
+    position: relative;
 }
 
 .hero-text{
@@ -142,7 +143,7 @@ nav{
     max-width: 550px;
 }
 
-.buttons{
+.bottons{
 
     display:flex;
 
@@ -247,12 +248,109 @@ nav{
 }
 
 
-.scroll-down{
+.scroll-down a{
+
+    display:block;
 
     text-align:center;
 
-    margin-top:30px;
+    margin-top:40px;
+
+    color:white;
+    text-decoration:none;
+    position: absolute;
+    bottom:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.scroll-down a:hover{
+    color: var(--primary);
+}
+
+/* About Section */
+
+.about{
+    padding: 100px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h4{
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    margin-top:10px;
+
+}
+
+.about-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.about-image{
+
+    flex:1;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    max-width:350px;
+
+    border-radius:20px;
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h3{
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+.about-text h4{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
 
     color:var(--light);
+
+    line-height:1.8;
 
 }

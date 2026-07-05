@@ -543,6 +543,7 @@ nav{
     overflow:hidden;
 
     transition:.3s;
+    position: relative;
 
 }
 
@@ -555,6 +556,7 @@ nav{
 .project-card img{
 
     width:100%;
+    height: 40%;
 
     display:block;
 
@@ -586,7 +588,112 @@ nav{
 
     display:flex;
 
+    gap:0px;
+    flex-wrap:wrap;
+
+}
+
+
+.project-filter{
+
+    display:flex;
+
+    justify-content:center;
+
     gap:15px;
+
+    margin-bottom:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.project-filter button{
+
+    padding:10px 22px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#1E293B;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.project-filter button:hover,
+.active-filter{
+
+    background:var(--primary);
+
+}
+
+.featured{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:gold;
+
+    color:black;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.project-tags{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin:20px 0;
+
+}
+
+.project-tags span{
+
+    background:#1E293B;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.project-card{
+
+    overflow:hidden;
+
+}
+
+.project-card img{
+
+    transition:.4s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
 
 }
 

@@ -11,9 +11,8 @@
     .nav-links{
 
         display:none;
-opacity: 50%;
+        opacity: 50%;
         position:absolute;
-
         top:80px;
 
         left: 0;
@@ -24,11 +23,16 @@ opacity: 50%;
         flex-direction:column;
 
         text-align:left;
+        
 
         padding:20px 0;
 
         gap:20px;
 
+    }
+    .nav-links a{
+        opacity: 100%;
+        color: white;
     }
 
     .nav-links.active{
@@ -67,5 +71,9 @@ opacity: 50%;
 
     font-size:40px;
 
+}
+
+.scroll-down{
+    display: none;
 }
 }

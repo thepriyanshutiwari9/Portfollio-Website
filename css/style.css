@@ -517,3 +517,76 @@ nav{
     transform:translateY(-8px);
 
 }
+/* Project SEction start here*/
+.projects{
+
+    padding:100px 0;
+
+}
+
+.project-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:var(--card-color);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.project-info{
+
+    padding:25px;
+
+}
+
+.project-info h3{
+
+    margin-bottom:15px;
+
+}
+
+.project-info p{
+
+    color:var(--light);
+
+    line-height:1.7;
+
+}
+
+.project-btn{
+
+    margin-top:20px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+

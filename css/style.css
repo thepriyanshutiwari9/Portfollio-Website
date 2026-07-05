@@ -697,3 +697,76 @@ nav{
 
 }
 
+
+.contact{
+
+    padding:100px 0;
+
+}
+
+.contact-content{
+
+    display:flex;
+
+    gap:50px;
+
+}
+
+.contact-info{
+
+    flex:1;
+
+}
+
+.contact-form{
+
+    flex:1;
+
+}
+
+.contact-card{
+
+    background:var(--card-color);
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#1E293B;
+
+    color:white;
+
+}
+
+.contact-form textarea{
+
+    height:180px;
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    cursor:pointer;
+
+}

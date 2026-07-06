@@ -5,62 +5,38 @@ menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-const form=document.getElementById("contactForm");
+const form = document.getElementById("contactForm");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const sendBtn = document.getElementById("sendBtn");
 
-const name=document.getElementById("name");
+form.addEventListener("submit", function (e) {
 
-const email=document.getElementById("email");
+    e.preventDefault();
 
-const subject=document.getElementById("subject");
+    if (
+        name.value === "" ||
+        email.value === "" ||
+        subject.value === "" ||
+        message.value === ""
+    ) {
+        alert("Please fill all fields");
+        return;
+    }
 
-const message=document.getElementById("message");
+    if (!email.value.includes("@")) {
+        alert("Invalid Email");
+        return;
+    }
 
-const sendBtn=document.getElementById("sendBtn");
+    sendBtn.innerHTML = "Sending...";
 
-form.addEventListener("submit",function(e){
-
-e.preventDefault();
+    setTimeout(() => {
+        alert("Message Sent Successfully");
+        sendBtn.innerHTML = "Send Message";
+        form.reset();
+    }, 2000);
 
 });
-
-if(
-
-name.value==="" ||
-
-email.value==="" ||
-
-subject.value==="" ||
-
-message.value===""
-
-){
-
-alert("Please fill all fields");
-
-return;
-
-}
-
-if(
-
-!email.value.includes("@")
-
-){
-
-alert("Invalid Email");
-
-return;
-
-}
-
-sendBtn.innerHTML="Sending...";
-
-setTimeout(()=>{
-
-alert("Message Sent Successfully");
-
-sendBtn.innerHTML="Send Message";
-
-form.reset();
-
-},2000);

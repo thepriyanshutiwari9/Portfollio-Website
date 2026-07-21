@@ -14,6 +14,10 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+
         <link rel="stylesheet"
             href="../css/style.css">
 
@@ -23,9 +27,16 @@
         <link rel="stylesheet"
             href="../css/annimation.css">
 
-
+        
     </head>
     <body>
+
+        <div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
     <header>
         <nav class="container">
             <div class="menu-btn">
@@ -35,8 +46,11 @@
             <div class="logo">
                 Portfolio
             </div>
-            <ul class="nav-links"  >
-                <li><a href="#">Home </a></li>
+            <ul class="nav-links">
+                <button id="themeToggle" class="theme-btn">
+                    <i class="ri-moon-line"></i>
+                </button>
+                <li><a href="#home">Home </a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -46,9 +60,12 @@
     </header>
     <!--Hero Section-->
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
+            
             <div class="hero-text">
-                <h3>Hello, I'm</h3>
+                <h3>Hello, I'm 
+                    <span class="typing"></span>
+                </h3>
                 <h1>Priyanshu Tiwari</h1>
                 <h2>Fullstack developer</h2>
                 <p>
@@ -62,11 +79,13 @@
 
                 <div class="social-icons">
 
-                    <a href="#">GitHub</a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
 
-                    <a href="#">LinkedIn</a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
 
-                    <a href="#">Instagram</a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
 
                 </div> 
                 </div>
@@ -610,7 +629,7 @@
             <!-- Left -->
             <div class="footer-about">
 
-                <h2>Anshu.</h2>
+                <h2>Priyanshu.</h2>
 
                 <p>
                     Passionate Frontend Developer creating modern,
@@ -666,7 +685,7 @@
         <div class="footer-bottom">
 
             <p>
-                © 2026 Anshu Kumar. All Rights Reserved.
+                © 2026 Priyanshu Tiwari. All Rights Reserved.
             </p>
 
         </div>
@@ -685,6 +704,7 @@
 
 
     </main>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script src="../js/script.js"></script>
         <script src="../js/scroll.js"></script>
     </body>

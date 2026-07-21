@@ -12,7 +12,8 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 const sendBtn = document.getElementById("sendBtn");
 
-form.addEventListener("submit", function (e) {
+if(form){
+form.addEventListener("submit", function(e) {
 
     e.preventDefault();
 
@@ -40,8 +41,10 @@ form.addEventListener("submit", function (e) {
     }, 2000);
 
 });
+}
 
 const topBtn=document.getElementById("topBtn");
+if(topBtn){
 
 window.addEventListener("scroll",()=>{
 
@@ -70,11 +73,12 @@ topBtn.addEventListener("click",()=>{
     });
 
 });
+}
 
 
 const sections=document.querySelectorAll("section");
 
-const navLinks=document.querySelectorAll(".nav-links a");
+const navItem=document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll",()=>{
 
@@ -86,15 +90,21 @@ window.addEventListener("scroll",()=>{
 
         const sectionHeight=section.offsetHeight;
 
-        if(window.scrollY>=sectionTop){
+       if(
 
-            current=section.getAttribute("id");
+window.scrollY>=sectionTop &&
 
-        }
+window.scrollY<sectionTop+sectionHeight
+
+){
+
+current=section.getAttribute("id");
+
+}
 
     });
 
-    navLinks.forEach(link=>{
+    navItem.forEach(link=>{
 
         link.classList.remove("active");
 
@@ -105,5 +115,56 @@ window.addEventListener("scroll",()=>{
         }
 
     });
+
+});
+
+const themeBtn = document.getElementById("themeToggle");
+const icon = themeBtn.querySelector("i");
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-theme");
+
+    if (document.body.classList.contains("light-theme")) {
+        localStorage.setItem("theme", "light-theme");
+    } else {
+        localStorage.removeItem("theme");
+    }
+});
+const loader=document.getElementById("loader");
+if(loader){
+window.onload=()=>{
+
+loader.style.display="none";
+
+}
+}
+
+const header=document.querySelector("header");
+
+window.addEventListener("scroll",()=>{
+
+header.classList.toggle("sticky",window.scrollY>50);
+
+});
+
+
+new Typed(".typing",{
+
+strings:[
+
+"Priyanshu Tiwari",
+    
+"Frontend Developer",
+
+"Java Developer",
+
+"Web Designer"
+
+],
+
+typeSpeed:80,
+
+backSpeed:50,
+
+loop:true
 
 });
